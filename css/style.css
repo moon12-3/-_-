@@ -47,7 +47,7 @@ html, body {
 
 #under-obj-img {
     position: absolute;
-    width:2.083vw;
+    width:31.94px;
     height: auto;
 
 }
@@ -62,7 +62,7 @@ html, body {
 .navbar-toggle-btn {
     position : absolute;
     right:5.2vw;
-    top : 5.3vh;
+    top : 3.3vh;
     color : white;
     display: none;
 }
