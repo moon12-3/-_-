@@ -13,6 +13,10 @@ html, body {
     scroll-behavior: smooth;
 }
 
+html::-webkit-scrollbar {
+    display: none;
+}
+
 .content-main {
     max-width: 100vw;
 }
@@ -54,10 +58,16 @@ html, body {
 
 .nav {
     display: flex;
-    position:absolute;
-    left:41.451vw;
-    top : 2.4vh;
+    position:fixed;
+    width:58.549vw;
+    margin-left:41.451vw;
+    margin-top : 2.4vh;
+    transition: transform .3s;
 }
+
+.nav.hide {
+    transform: translateY(-100%);
+  }
 
 .navbar-toggle-btn {
     position : absolute;
@@ -99,8 +109,8 @@ nav>ul li {
 
 #top-logo {
     position:absolute;
+    top : 3.3vh;
     right:5.2vw;
-    top : 5.3vh;
     /* margin-left:3px; */
 }
 
@@ -109,6 +119,38 @@ nav>ul li {
     height: auto;
 }
 
+#footer {
+    position: absolute;
+    top:6.25vh;
+    left:20.36vw;
+    display: flex;
+    gap: 15.87vw;
+}
+
+footer {
+    position: relative;
+    height:260px;
+    width: 100%;
+    background-color: #434040;
+}
+
+.section {
+    display: block;
+}
+
+.section p {
+    color: white;
+}
+
+.f-title {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.f-text{
+    font-size:0.6rem;
+    font-weight:300px;
+}
 
 a {
     color : white;
