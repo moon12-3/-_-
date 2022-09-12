@@ -31,7 +31,6 @@ html::-webkit-scrollbar {
 }
 
 
-
 #main-logo {
     position:absolute;
     left: 33vw;
@@ -53,7 +52,12 @@ html::-webkit-scrollbar {
     position: absolute;
     width:31.94px;
     height: auto;
+    animation:motion 0.5s linear 0s infinite alternate;
+}
 
+@keyframes motion {
+    0% {margin-top: 0px;}
+    100% {margin-top: 10px;}
 }
 
 .nav {
@@ -63,6 +67,7 @@ html::-webkit-scrollbar {
     margin-left:41.451vw;
     margin-top : 2.4vh;
     transition: transform .3s;
+    z-index: 99;
 }
 
 .nav.hide {
