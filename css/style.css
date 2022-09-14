@@ -1,4 +1,3 @@
-
 /* html{overflow: hidden;} */
 
 *{
@@ -17,14 +16,21 @@ html::-webkit-scrollbar {
     display: none;
 }
 
+
+.content {
+    background-image: url("../img/image1.png");
+    background-attachment: fixed;
+}
+
 .content-main {
-    max-width: 100vw;
+    /* max-width: 100vw; */
+    background-color: rgb(0,0,0,0.4);
 }
 
 #top {
     position:relative;
     max-width: 100vw;
-    height: 190vh;
+    height: 1780px;
     /* background-color: black; */
     background:url("../img/background.jpg") no-repeat;
     background-size : cover;
@@ -63,11 +69,15 @@ html::-webkit-scrollbar {
 .nav {
     display: flex;
     position:fixed;
-    width:58.549vw;
-    margin-left:41.451vw;
+    width:100vw;
+    margin-left:6.47vw;
     margin-top : 2.4vh;
     transition: transform .3s;
     z-index: 99;
+}
+
+#img-logo {
+    margin-right: 31.98vw;
 }
 
 .nav.hide {
@@ -86,10 +96,20 @@ html::-webkit-scrollbar {
     display: flex;
     list-style-type: none;
 }
-        
+
 nav>ul li {
     /* float: left; */
     padding : 1vh 2.6vw;
+    opacity: 0.4;
+    transition: opacity 1s;
+}
+
+nav li:hover {
+    opacity: 1;
+}
+
+nav>ul li:first-child {
+    opacity: 1;
 }
 
 #nav-item1 {
@@ -98,24 +118,23 @@ nav>ul li {
 }
 
 #nav-item2 {
-    width: 67.26px;
+    width: 73.08px;
     height: auto;
 }
 
 #nav-item3 {
-    width: 56.6016px;
+    width: 72.59px;
     height: auto;
 }
 
 #nav-item4 {
-    width: 72.499px;
+    width: 92.296px;
     height: auto;
 }
 
 #top-logo {
-    position:absolute;
-    top : 3.3vh;
-    right:5.2vw;
+    margin-top : 3.3vh;
+    margin-left:4vw;
     /* margin-left:3px; */
 }
 
@@ -135,16 +154,14 @@ nav>ul li {
 footer {
     position: relative;
     height:260px;
+    background-color: #fff;
+    color: #929292;
     width: 100%;
-    background-color: #434040;
+    /* background-color: #434040; */
 }
 
 .section {
     display: block;
-}
-
-.section p {
-    color: white;
 }
 
 .f-title {
@@ -160,4 +177,174 @@ footer {
 a {
     color : white;
     text-decoration: none;
+}
+
+.slogan {
+    position:relative;
+    background-color: white;
+    height: 400px;
+}
+
+.slogan-text {
+    position:absolute;
+    top:94.5px;
+    left:17.96vw;
+}
+
+#second {
+    position: relative;
+}
+
+.s-content {
+    position: relative;
+    height: 100vh;
+    
+}
+
+.s-content2 {
+    position: relative;
+    height: auto;
+}
+
+.about-text {
+    color: #fff;
+    position:absolute;
+    top:19.9vh;
+    left:17.96vw;
+}
+
+.main-text {
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 120px;
+    color:#fff;
+}
+
+.mar {
+    height: 14.07vh;
+}
+
+.big-content {
+    display: flex;
+    gap:5.52vw;
+    margin-left:12.96vw;
+    margin-bottom:42px;
+}
+
+.f-content {
+    width: 339px;
+    height: auto;
+    display: block;
+    position: relative;
+}
+
+.sub-title {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    color:#393939;
+}
+
+.f-img {
+    margin-top:4.9vh;
+    /* width:105.67px; */
+    height:auto;
+}
+
+.sub-text {
+    color:#929292;
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 30px;
+    margin-top:4.25vh;
+}
+
+.gray-box {
+    width: 64.06vw;
+    height: 38.88vh;
+    margin:auto;
+    background-color: #d9d9d9;
+    margin-bottom: 20px;
+}
+
+#third {
+    background-color: #fff;
+}
+
+.way-content {
+    margin-top: 12.31vh;
+    width: 64%;
+    height: 80%;
+    margin:auto;
+}
+
+.way {
+    font-family: 'Apple SD Gothic Neo';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+}
+
+.mab{
+    position:relative;  height: 0; margin:0; margin-bottom:55.92vh;}
+iframe{position:absolute; left:0; top:0; width: 64.06vw; height: 50.92vh;}
+
+.m-section {
+    margin-bottom: 19px;
+}
+
+.m-title {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    color:#393939;
+}
+
+.m-text {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    color:#d9d9d9;
+}
+
+#fourth {
+    position: relative;
+    width: 100vw;
+    height:100vh;
+    background-image: url("../img/image2.png");
+    /* background-attachment: fixed; */
+}
+
+.b {
+    background-color: rgb(0,0,0,0.4);
+    width: 100%;
+    height:100%;
+}
+
+.web-title {
+    position:absolute;
+    top:22.68vh;
+    left:17.96vw;
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 7rem;
+    line-height: 138px;
+    color:white;
+}
+.web-btn {
+    position:absolute;
+    top:62vh;
+    left:17.96vw;
+    width:125px;
+    height:54px;
+    background-color: rgb(0,0,0,0);
+    border-color: white;
+    font-family: 'Apple SD Gothic Neo';
+    font-weight: 500;
+    color: white;
 }
