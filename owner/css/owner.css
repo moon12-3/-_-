@@ -1,0 +1,240 @@
+*{
+    /* outline: solid 1px red; */
+}
+
+body, html {
+    width: 100%; 
+    margin: 0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+.nav {
+    display: flex;
+    position:fixed;
+    width:100vw;
+    margin-left:6.47vw;
+    margin-top : 2.4vh;
+    transition: transform .3s;
+    z-index: 99;
+}
+
+#img-logo {
+    margin-right: 31.98vw;
+}
+
+.nav.hide {
+    transform: translateY(-100%);
+  }
+
+.navbar-toggle-btn {
+    position : absolute;
+    right:5.2vw;
+    top : 3.3vh;
+    color : white;
+    display: none;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style-type: none;
+}
+
+nav>ul li {
+    /* float: left; */
+    padding : 1vh 2.6vw;
+    opacity: 0.4;
+    transition: opacity 1s;
+}
+
+nav li:hover {
+    opacity: 1;
+}
+
+nav>ul li:nth-child(3) {
+    opacity: 1;
+}
+
+#nav-item1 {
+    width: 58.35px;
+    height: auto;
+}
+
+#nav-item2 {
+    width: 73.08px;
+    height: auto;
+}
+
+#nav-item3 {
+    width: 72.59px;
+    height: auto;
+}
+
+#nav-item4 {
+    width: 92.296px;
+    height: auto;
+}
+
+#top-logo {
+    margin-top : 3.3vh;
+    margin-left:4vw;
+    /* margin-left:3px; */
+}
+
+#top-logo-img {
+    width: 138.168px;
+    height: auto;
+}
+
+.main-text {
+    position:absolute;
+    top:32.79vh;
+    left:19.16vw;
+    color: white;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.5rem;
+}
+
+#top {
+    /* position: relative; */
+    background: url("../../img/image4.png") no-repeat;
+    background-size:cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.b {
+    background-color: rgb(0,0,0, 0.4);
+    width: 100vw;
+    height: 100vh;
+}
+
+#footer {
+    position: absolute;
+    top:6.25vh;
+    /* left:20.36vw; */
+    display: flex;
+    gap: 15.87vw;
+}
+
+footer {
+    position: relative;
+    height:260px;
+    background-color: #fff;
+    color: #929292;
+    width: 60%;
+    margin: auto;
+    /* background-color: #434040; */
+}
+
+.section {
+    display: block;
+}
+
+.f-title {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.f-text{
+    font-size:0.6rem;
+    font-weight:300px;
+}
+
+#second {
+    position:relative;
+}
+
+.mar {
+    height: 90px;
+}
+
+.s-content {
+    margin-top: 90px;
+    width:64%;
+    margin:auto;
+}
+
+.s-title {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.5rem;
+    line-height: 138px;
+}
+
+.s-inst {
+    margin-top:5.27vh;
+    color: #929292;
+    line-height: 30px;
+}
+
+.s-name {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 50px;
+}
+
+.owner {
+    display: flex;
+    width:64%;
+    margin: auto;
+    gap:1vw;
+}
+
+.owner-img {
+    margin-top: 6.85vh;
+    width: 293px;
+    height: 30.55vh;
+    background-color: #d9d9d9;
+}
+
+.f-inst {
+    position: relative;
+    margin-top: 11.6vh;
+    background: url("../../img/fowner.png") no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 45vh;
+    display: flex;
+    align-items: center
+}
+
+.f-slogan {
+    position: absolute;
+    left: 18vw;
+    width: 23.95vw;
+    height: auto;
+}
+
+#etc {
+    width: 64%;
+    margin: auto;
+    margin-top: 4vh;
+    margin-bottom: 15.46vh;
+    color: #929292;
+}
+
+.etc-img {
+    width: 230px;
+    height: 22.22vh;
+    background-color: #d9d9d9;
+}
+
+.o-text {
+    color:#929292;
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 30px;
+    margin-right: 50px;
+}
