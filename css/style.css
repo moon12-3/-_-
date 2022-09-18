@@ -31,7 +31,6 @@ html::-webkit-scrollbar {
     position:relative;
     max-width: 100vw;
     height: 1780px;
-    /* background-color: black; */
     background:url("../img/background.jpg") no-repeat;
     background-size : cover;
 }
@@ -154,7 +153,7 @@ nav>ul li:first-child {
 footer {
     position: relative;
     height:260px;
-    background-color: #fff;
+    background-color: #f5f5f5;
     color: #929292;
     width: 100%;
     /* background-color: #434040; */
@@ -183,6 +182,7 @@ a {
     position:relative;
     background-color: white;
     height: 400px;
+    background-color: #f5f5f5;
 }
 
 .slogan-text {
@@ -192,6 +192,7 @@ a {
 }
 
 #second {
+    
     position: relative;
 }
 
@@ -226,13 +227,17 @@ a {
 
 .big-content {
     display: flex;
-    gap:5.52vw;
-    margin-left:12.96vw;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    width: 67.06%;
+    margin: auto;
+    /* margin-left:12.96vw; */
     margin-bottom:42px;
 }
 
 .f-content {
-    width: 339px;
+    /* width: 343px; */
     height: auto;
     display: block;
     position: relative;
@@ -252,6 +257,11 @@ a {
     height:auto;
 }
 
+#f-img {
+    position: absolute;
+    right: 0px;
+}
+
 .sub-text {
     color:#929292;
     font-family: 'Apple SD Gothic Neo';
@@ -263,7 +273,7 @@ a {
 }
 
 .gray-box {
-    width: 64.06vw;
+    width: 67.06%;
     height: 38.88vh;
     margin:auto;
     background-color: #d9d9d9;
@@ -271,12 +281,12 @@ a {
 }
 
 #third {
-    background-color: #fff;
+    background-color: #f5f5f5;
 }
 
 .way-content {
     margin-top: 12.31vh;
-    width: 64%;
+    width: 67.06%;
     height: 80%;
     margin:auto;
 }
@@ -290,7 +300,7 @@ font-size: 50px;
 
 .mab{
     position:relative;  height: 0; margin:0; margin-bottom:55.92vh;}
-iframe{position:absolute; left:0; top:0; width: 64.06vw; height: 50.92vh;}
+iframe{position:absolute; left:0; top:0; width: 67.06vw; height: 50.92vh;}
 
 .m-section {
     margin-bottom: 19px;
@@ -317,7 +327,7 @@ iframe{position:absolute; left:0; top:0; width: 64.06vw; height: 50.92vh;}
     width: 100vw;
     height:100vh;
     background-image: url("../img/image2.png");
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
 }
 
 .b {
@@ -349,3 +359,15 @@ iframe{position:absolute; left:0; top:0; width: 64.06vw; height: 50.92vh;}
     color: white;
 }
 
+.bar {
+    opacity: 1;
+    position: fixed;
+    bottom: 20px;
+    right: 19vw;
+}
+
+@media screen and (max-width:563px) {
+    .f-slogan {
+        width: 300px;
+    }
+}

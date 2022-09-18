@@ -16,3 +16,20 @@ $(window).scroll(function() {
   }
 	last_top = this_top;  
 });
+
+let bar = $('.bar');
+
+bar.fadeOut(0);
+
+$(document).ready(function(){
+  $(window).scroll(function () {
+    let scroll_height = $(document).scrollTop();
+    // console.log(scroll_height);
+    if ( $(window).height() >= scroll_height) {
+        bar.fadeOut();
+        // console.log(scroll_height);
+    } else {
+        bar.fadeIn();
+    }
+  });
+});
