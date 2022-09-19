@@ -187,9 +187,9 @@ footer {
 .owner {
     display: flex;
     flex-wrap: wrap;
-    width:67%;
+    width: 67.06%;
     margin: auto;
-    gap:0.5vw;
+    justify-content: space-between;
 }
 
 .owner-img {
@@ -197,6 +197,12 @@ footer {
     width: 250px;
     height: 30.55vh;
     background-color: #d9d9d9;
+}
+
+.owner-etc {
+    display: flex;
+    gap: 0.5vw;
+    flex-wrap: wrap;
 }
 
 .f-inst {
@@ -219,7 +225,7 @@ footer {
 }
 
 #etc {
-    width: 67%;
+    width: 67.06%;
     margin: auto;
     margin-top: 4vh;
     margin-bottom: 15.46vh;
@@ -243,9 +249,10 @@ footer {
 }
 
 .bar {
+    opacity: 0;
     position: fixed;
     bottom: 20px;
-    right: 19vw;
+    right: 16.2vw;
 }
 
 @media screen and (max-width:879px) {

@@ -19,8 +19,6 @@ $(window).scroll(function() {
 
 let bar = $('.bar');
 
-bar.fadeOut(0);
-
 $(document).ready(function(){
   $(window).scroll(function () {
     let scroll_height = $(document).scrollTop();
@@ -29,6 +27,7 @@ $(document).ready(function(){
         bar.fadeOut();
         // console.log(scroll_height);
     } else {
+        bar.animate({opacity:"1"}, 0);
         bar.fadeIn();
     }
   });
