@@ -1,4 +1,4 @@
-/* html{overflow: hidden;} */
+
 
 *{
     /* outline: solid 1px red; */
@@ -154,16 +154,10 @@ nav>ul li:first-child {
 footer {
     position: relative;
     height:260px;
-    color: #929292;
+    color: #565656;
     width: 67.06%;
     margin: auto;
     /* background-color: #434040; */
-}
-
-.f-background {
-    width:100%;
-    background-color: #f5f5f5;
-    height:260px;
 }
 
 .section {
@@ -171,12 +165,18 @@ footer {
 }
 
 .f-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
     font-weight: 500;
     font-size: 1rem;
 }
 
 .f-text{
-    font-size:0.6rem;
+    font-family: 'Apple SD Gothic Neo UL';
+    font-style: normal;
+    font-weight: 300;
+    font-size:0.8rem;
     font-weight:300px;
 }
 
@@ -194,18 +194,20 @@ a {
 
 .slogan-text {
     position:absolute;
-    top:94.5px;
+    top:140px;
     left:17.96vw;
 }
 
 #second {
-    
+    display:flex;
+    align-items: center;
+    height: 100vh;
     position: relative;
 }
 
 .s-content {
-    position: relative;
     height: 100vh;
+    position: relative;
     
 }
 
@@ -216,16 +218,21 @@ a {
 
 .about-text {
     color: #fff;
-    position:absolute;
-    top:19.9vh;
-    left:17.96vw;
+    margin-left:17.96vw;
 }
 
 .main-text {
     font-family: 'Times New Roman';
     font-weight: 700;
-    font-size: 120px;
+    font-size: 5rem;
     color:#fff;
+    margin-bottom: 5vh;
+}
+
+.sub-main-text {
+    font-family: 'Apple SD Gothic Neo UL';
+    font-size: 1rem;
+    line-height: 4.62vh;
 }
 
 .mar {
@@ -254,7 +261,7 @@ a {
     font-family: 'Times New Roman';
     font-style: normal;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 2.3rem;
     color:#393939;
 }
 
@@ -270,20 +277,20 @@ a {
 }
 
 .sub-text {
-    color:#929292;
-    font-family: 'Apple SD Gothic Neo';
-    font-style: normal;
-    font-weight: 300;
+    color: #565656;
+    font-family: 'Apple SD Gothic Neo L';
     font-size: 1rem;
-    line-height: 30px;
+    line-height: 2rem;
     margin-top:4.25vh;
 }
 
+
+
 .gray-box {
     width: 67.06%;
-    height: 38.88vh;
+    height: a;
     margin:auto;
-    background-color: #d9d9d9;
+    /*background:url("../img/mask group2.png") no-repeat;*/
     margin-bottom: 20px;
 }
 
@@ -296,13 +303,16 @@ a {
     width: 67.06%;
     height: 80%;
     margin:auto;
+    color: #393939;
+}
+
+.f-slogan {
+    width:300px;
 }
 
 .way {
-    font-family: 'Apple SD Gothic Neo';
-font-style: normal;
-font-weight: 700;
-font-size: 50px;
+    font-family: 'Apple SD Gothic Neo EB';
+    font-size: 50px;
 }
 
 .mab{
@@ -314,15 +324,13 @@ iframe{position:absolute; left:0; top:0; width: 67.06vw; height: 50.92vh;}
 }
 
 .m-title {
-    font-family: 'Apple SD Gothic Neo';
-    font-style: normal;
-    font-weight: 600;
+    font-family: 'Apple SD Gothic Neo EB';
     font-size: 1rem;
     color:#393939;
 }
 
 .m-text {
-    font-family: 'Apple SD Gothic Neo';
+    font-family: 'Apple SD Gothic Neo UL';
     font-style: normal;
     font-weight: 300;
     font-size: 1rem;
@@ -349,7 +357,7 @@ iframe{position:absolute; left:0; top:0; width: 67.06vw; height: 50.92vh;}
     left:17.96vw;
     font-family: 'Times New Roman';
     font-weight: 700;
-    font-size: 7rem;
+    font-size: 6rem;
     line-height: 138px;
     color:white;
 }
@@ -364,6 +372,13 @@ iframe{position:absolute; left:0; top:0; width: 67.06vw; height: 50.92vh;}
     font-family: 'Apple SD Gothic Neo';
     font-weight: 500;
     color: white;
+    font-size: 1rem;
+}
+
+.web-btn:hover {
+    background-color: white;
+    color:black;
+    transition: all 2s;
 }
 
 .bar {
@@ -376,5 +391,23 @@ iframe{position:absolute; left:0; top:0; width: 67.06vw; height: 50.92vh;}
 @media screen and (max-width:563px) {
     .f-slogan {
         width: 300px;
+    }
+}
+
+@media screen and (max-width:843px) {
+    .web-title {
+        top:12.68vh;
+    }
+    .web-btn {
+        top:80vh;
+    }
+}
+
+@media screen and (max-width:547px) {
+    .web-title {
+        top:2.68vh;
+    }
+    .web-btn {
+        top:85vh;
     }
 }

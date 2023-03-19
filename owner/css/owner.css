@@ -118,18 +118,19 @@ nav>ul li:nth-child(3) {
 }
 
 #footer {
+    width: 100%;
     position: absolute;
     top:6.25vh;
     /* left:20.36vw; */
     display: flex;
-    gap: 15.87vw;
+    justify-content: space-between;
 }
 
 footer {
     position: relative;
     height:260px;
-    color: #929292;
-    width: 60%;
+    color: #565656;
+    width: 67.06%;
     margin: auto;
     /* background-color: #434040; */
 }
@@ -139,12 +140,16 @@ footer {
 }
 
 .f-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
     font-weight: 500;
     font-size: 1rem;
 }
 
 .f-text{
-    font-size:0.6rem;
+    font-family: 'Apple SD Gothic Neo UL';
+    font-size:0.8rem;
     font-weight:300px;
 }
 
@@ -171,8 +176,9 @@ footer {
 }
 
 .s-inst {
+    font-family: 'Apple SD Gothic Neo UL';
     margin-top:5.27vh;
-    color: #929292;
+    color: #565656;
     line-height: 30px;
 }
 
@@ -195,7 +201,6 @@ footer {
 .owner-img {
     margin-top: 6.85vh;
     width: 250px;
-    height: 30.55vh;
     background-color: #d9d9d9;
 }
 
@@ -229,22 +234,21 @@ footer {
     margin: auto;
     margin-top: 4vh;
     margin-bottom: 15.46vh;
-    color: #929292;
+    color: #565656;
 }
 
 .etc-img {
     width: 230px;
-    height: 22.22vh;
-    background-color: #d9d9d9;
+    height: auto;
 }
 
 .o-text {
-    color:#929292;
-    font-family: 'Apple SD Gothic Neo';
+    color: #565656;
+    font-family: 'Apple SD Gothic Neo UL';
     font-style: normal;
     font-weight: 300;
     font-size: 1rem;
-    line-height: 30px;
+    line-height: 2rem;
     margin-right: 50px;
 }
 
@@ -258,5 +262,26 @@ footer {
 @media screen and (max-width:879px) {
     .f-slogan {
         width: 210px;
+    }
+}
+
+@media screen and (max-width:1920px) {
+    .etc-img {
+        width: auto;
+    }
+
+    .owner-img {
+        width: auto;
+    }
+}
+
+@media screen and (max-width:1536px) {
+    .etc-img {
+        width: 230px;
+        height: auto;
+    }
+
+    .owner-img {
+        width: 250px;
     }
 }
